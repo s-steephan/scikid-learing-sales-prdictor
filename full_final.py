@@ -39,7 +39,7 @@ def plot_test_line_graph():
 
 def plot_seasonal_graph():
 	series = Series.from_csv('dataset_training.csv')
-	groups = series['1964':'1970'].groupby(TimeGrouper('A'))
+	groups = series['2010':'2016'].groupby(TimeGrouper('A'))
 	years = DataFrame()
 	pyplot.figure()
 	i = 1
